@@ -32,26 +32,29 @@
 \input{header}
 
 \begin{document}
-
+    %\frontmatter
     \pagenumbering{roman}
 
     \include{titlepage}
     \include{chapter/declaration}
     \include{chapter/abstract}
-
     \tableofcontents
-
     \include{chapter/acronyms}
 
-    \pagebreak
+    % Remember current roman page number
+    \newcounter{oldpage}
+    \setcounter{oldpage}{\value{page}}
+
+    %\mainmatter
     \pagenumbering{arabic}
 
-    % Hier weitere Kapitel einfügen
     \include{chapter/1-introduction}
+    % Hier weitere Kapitel einfügen
 
-    % Die nächsten zwei Zeilen sind optional, sie sorgen dafür dass alles nach dem Inhalt wieder mit römischen Zahlen nummeriert wird.
+    %backmatter
+    % Continue roman page numbering
     \pagenumbering{roman}
-    \addtocounter{page}{4} % Dies ist die Anzahl der Seiten vor der Einleitung, muss möglicherweise angepasst werden, wenn das Inhaltsverzeichnis mehrere Seiten umfasst.
+    \setcounter{page}{\value{oldpage}}
 
     \bibliographystyle{alphadin}
     \bibliography{main}
