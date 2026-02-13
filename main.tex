@@ -3,12 +3,12 @@
     pdftex,
     a4paper,
     11pt,
-    oneside,
+    oneside, % Ganz Wichtig! beidseitiger Druck -> twoside!
     parskip,
     numbers=noenddot,
     listof=totoc,
     bibliography=totoc,
-    hyperfootnotes=false
+    hyperfootnotes=false,
 ]{scrreprt}
 
 % Inhaltsverzeichnis im Inhaltsverzeichnis anzeigen...
@@ -17,11 +17,10 @@
 \newcommand{\thesistitle}{Untersuchung der allgemeinen Anwendbarkeit von Fluxkondensatoren}
 \newcommand{\thesissubtitle}{Zur Gewinnung von Einblicken}
 \newcommand{\thesistype}{Masterarbeit}
-\newcommand{\thesistypedesc}{im Fachbereich Elektrotechnik/Informatik \\
-    der Universität Kassel}
+%\newcommand{\thesistypedesc}{im Fachbereich Elektrotechnik/Informatik \\ der Universität Kassel}
 \newcommand{\thesisauthorname}{Max Mustermann}
-\newcommand{\thesisauthorhomestreet}{Beispielstr. 42}
-\newcommand{\thesisauthorhometown}{34121 Kassel}
+%\newcommand{\thesisauthorhomestreet}{Beispielstr. 42}
+%\newcommand{\thesisauthorhometown}{34121 Kassel}
 \newcommand{\thesisauthormatrikelnumber}{35123456}
 \newcommand{\thesisauthoremail}{max.mustermann@uni-kassel.de}
 \newcommand{\thesisdepartment}{Fachgebiet Verteilte Systeme}
