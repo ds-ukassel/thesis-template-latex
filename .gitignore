@@ -16,3 +16,5 @@
 *.synctex.gz
 *.synctex(busy)
 *.toc
+
+!images/**/*.pdf
