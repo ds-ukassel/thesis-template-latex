@@ -2,6 +2,7 @@
     %draft, % Mit % kommentieren, um Bilder sichtbar zu machen und Links zu aktivieren
     pdftex,
     a4paper,
+    11pt,
     oneside,
     parskip,
     numbers=noenddot,
@@ -9,6 +10,8 @@
     bibliography=totoc,
     hyperfootnotes=false
 ]{scrreprt}
+
+% Inhaltsverzeichnis im Inhaltsverzeichnis anzeigen...
 \setuptoc{toc}{totoc}
 
 \newcommand{\thesistitle}{Untersuchung der allgemeinen Anwendbarkeit von Fluxkondensatoren}
@@ -33,12 +36,12 @@
     \pagenumbering{roman}
 
     \include{titlepage}
-    \include{declaration}
-    \include{abstract}
+    \include{chapter/declaration}
+    \include{chapter/abstract}
 
     \tableofcontents
 
-    \include{acronyms}
+    \include{chapter/acronyms}
 
     \pagebreak
     \pagenumbering{arabic}
@@ -58,5 +61,5 @@
     \lstlistoflistings
 
     \appendix
-    \include{appendix}
+    \include{chapter/appendix}
 \end{document}
