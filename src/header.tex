@@ -56,14 +56,10 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, citecolor=black, linkcolor=black, urlcolor=black}
 
-% Minted
-\usepackage[chapter]{minted}
-%\usemintedstyle{xcode}
-\setminted{frame=single,tabsize=2,linenos,autogobble}
-
-\newmintinline[code]{text}{breaklines}
-
-\newminted[mdcodeblock]{md}{autogobble,frame=none,linenos=false,breaklines}
+% Listings
+\usepackage{listings}
+\lstset{frame=single,tabsize=2,numbers=left}
+\renewcommand{\lstlistlistingname}{Listing-Verzeichnis}
 
 % list of abbreviations
 \usepackage[printonlyused]{acronym}

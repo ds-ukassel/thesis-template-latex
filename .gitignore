@@ -2,8 +2,6 @@
 /out/
 /auxil/
 
-_minted-*/
-
 *.aux
 *.bbl
 *.blg
